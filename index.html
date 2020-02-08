@@ -9,9 +9,17 @@
             margin: 5px;
             box-shadow: 1px 1px black;
         }
-        #Menu 
+        #corpo
+        {
+            padding-top: 100px;
+        }
+        #menu 
         {
             background-color: tomato;
+            position: fixed;
+            width: 100%;
+            margin-left: -15px;
+            margin-top: -10px;
             
         }
       li
@@ -22,7 +30,7 @@
             border-top-left-radius:  10px;
             border-bottom-right-radius: 10px;
         }
-       li: hover
+       li:hover
         {
         background-color: yellow;
         }
@@ -48,7 +56,7 @@
         p
         {
            text-align: justify;
-            font-family: sans-serif "Arial";
+            font-family: sans-serif;
         }
         h1
         {
@@ -58,13 +66,39 @@
     .imagem
         {
             border:1px 1px black;
-            width: 300px;
+            width: 49%;
             height: 300px;
             background-image: linear-gradient(orange, purple);
             margin-top: 20px;
-            
-            >
-            
+            }
+        .caixa
+        {
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 20px;
+            height: 30px;
+            font-size: 16pt;
+            text-align: center;
+            font-family: cursive;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        
+        }
+        form
+        {
+            padding-top: 30px;
+        }
+        .entrar
+        {
+            background-color: blue;
+            color: bisque;
+            height: 40px;
+        }
+        .Senha
+        {
+            background-color: blue;
+             color: bisque;
+            height: 40px;
         }
     </style>
     </head>
@@ -73,16 +107,24 @@
             <div id="menu">
             <nav>
                <ul>
-                <li><a class="Nav">Home</a></li>
+                <li><a class="Nav"> <img src="https://img.icons8.com/color/50/000000/home.png"></a></li>
                 <li><a class="Nav">Parte1</a></li>
                 <li><a class="Nav">Parte2</a></li> 
                 <li><a class="Nav">Parte3</a></li>
                 </ul> 
-                </nav>
-                
+                </nav>  
             </div>
             <div id="corpo">
             <div class="imagem esquerda">
+                <form>
+                <input class="caixa" type="text" placeholder="User">
+                <input class="caixa" type="password" placeholder="Senha">
+                    <br>
+                <input class="caixa entrar" value="Entrar">
+                 
+                   
+                       
+                </form>
                 
                 </div>
                 <div class="texto direita">
@@ -96,4 +138,5 @@
         
         </div>
     </body>
+    
 </html>
